@@ -66,6 +66,8 @@ public class PizzaParty{
                 System.out.println();
             }
         }
+        /* Closed the scanner because of resource leak */
+        scan.close();
         System.out.printf("Weekend Total: $%.2f", weekendTotal);
     }
 }
